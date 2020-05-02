@@ -1,5 +1,7 @@
 package ch.heigvd.mcr.visitor.house;
 
+import ch.heigvd.mcr.visitor.house.rooms.Room;
+
 public class House {
 
   private final Room[] rooms;
@@ -10,7 +12,7 @@ public class House {
   }
 
   public void visit(Visitor visitor) {
-    for (Room room : rooms) {
+    for (Visitable room : rooms) {
       room.accept(visitor);
     }
   }

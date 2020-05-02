@@ -2,7 +2,7 @@ package ch.heigvd.mcr.visitor.house.rooms;
 
 import ch.heigvd.mcr.visitor.house.Visitor;
 
-public class Kitchen extends HouseRoom {
+public class Kitchen extends Room {
 
   private int biscuits = 1;
 

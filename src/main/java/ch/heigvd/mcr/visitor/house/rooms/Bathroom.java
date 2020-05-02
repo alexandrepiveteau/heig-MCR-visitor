@@ -2,7 +2,7 @@ package ch.heigvd.mcr.visitor.house.rooms;
 
 import ch.heigvd.mcr.visitor.house.Visitor;
 
-public class Bathroom extends HouseRoom {
+public class Bathroom extends Room {
 
   public Bathroom() {
     super(12.0);
