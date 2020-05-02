@@ -1,15 +1,15 @@
 package ch.heigvd.mcr.visitor.house.visitor;
 
-import ch.heigvd.mcr.visitor.house.Room;
 import ch.heigvd.mcr.visitor.house.Room.Messiness;
 import ch.heigvd.mcr.visitor.house.Visitor;
 import ch.heigvd.mcr.visitor.house.rooms.Bathroom;
 import ch.heigvd.mcr.visitor.house.rooms.Bedroom;
+import ch.heigvd.mcr.visitor.house.rooms.HouseRoom;
 import ch.heigvd.mcr.visitor.house.rooms.Kitchen;
 
 public class Mom implements Visitor {
 
-  private void visitAndShout(Room room) {
+  private void visitAndShout(HouseRoom room) {
     if (room.getMessiness() == Messiness.Dirty) {
       System.out.println("mom > YOUR " + room.toString().toUpperCase() + " IS DIRTY !!!");
     }

@@ -12,17 +12,15 @@ public abstract class HouseRoom implements Room {
     this.messiness = Messiness.SuperClean;
   }
 
-  protected void setMessiness(Messiness messiness) {
-    this.messiness = messiness;
-  }
-
-  @Override
-  public Messiness getMessiness() {
+  public final Messiness getMessiness() {
     return this.messiness;
   }
 
-  @Override
-  public double getSurface() {
+  protected final void setMessiness(Messiness messiness) {
+    this.messiness = messiness;
+  }
+
+  public final double getSurface() {
     return surface;
   }
 
