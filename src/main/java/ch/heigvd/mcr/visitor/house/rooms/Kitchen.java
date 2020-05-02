@@ -2,7 +2,7 @@ package ch.heigvd.mcr.visitor.house.rooms;
 
 import ch.heigvd.mcr.visitor.house.Visitor;
 
-public class Kitchen extends SurfacedRoom {
+public class Kitchen extends HouseRoom {
 
   private int biscuits = 1;
 
@@ -19,10 +19,7 @@ public class Kitchen extends SurfacedRoom {
     return false;
   }
 
-  public Messiness getMessiness() {
-    return Messiness.Clean;
-  }
-
+  @Override
   public void accept(Visitor visitor) {
     visitor.visit(this);
   }
